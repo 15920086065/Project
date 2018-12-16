@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonNext"
+        android:layout_below="@+id/id_toolbar"
+        android:layout_margin="32dp">
+
+
+
+        <Button
+            android:id="@+id/dangling1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:enabled="false"
+            android:text="右前方"
+            android:textSize="17sp"
+            android:background="@drawable/btn_xk_state"
+            android:orientation="vertical"/>
+        <Button
+            android:id="@+id/dangling2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:enabled="false"
+            android:text="右后方"
+            android:background="@drawable/btn_xk_state"
+            android:orientation="vertical"/>
+        <Button
+            android:id="@+id/dangling3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:text="左后方"
+            android:background="@drawable/btn_xk_state"
+            android:orientation="vertical"/>
+        <Button
+            android:id="@+id/dangling4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:enabled="false"
+            android:background="@drawable/btn_xk_state"
+            android:text="左前方"
+            android:textSize="17sp"
+            android:orientation="vertical" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="下一步" />
+</RelativeLayout>

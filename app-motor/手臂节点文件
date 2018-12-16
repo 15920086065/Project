@@ -1,0 +1,16 @@
+/*左手向下转*/
+echo 2 > /sys/bus/i2c/devices/0-0016/ctrlsport_hand
+/*左手向上转*/
+echo 1 > /sys/bus/i2c/devices/0-0016/ctrlsport_hand
+/*右手向下转*/
+echo 3 > /sys/bus/i2c/devices/0-0016/ctrlsport_hand
+/*右手向上转*/
+echo 4 > /sys/bus/i2c/devices/0-0016/ctrlsport_hand
+/*左手中间停*/
+echo 5 > /sys/bus/i2c/devices/0-0016/ctrlsport_hand
+/*右手中间停*/
+echo 6 > /sys/bus/i2c/devices/0-0016/ctrlsport_hand
+/*全部停止*/
+cat 这个状态，u是最上了，d是最下 m是中间了。
+  ud  左手上，右手下
+操作这个节点  /sys/bus/i2c/devices/0-0016/ctrlsport_hand

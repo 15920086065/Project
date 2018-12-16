@@ -1,0 +1,56 @@
+开发帮助类
+
+网络监听：
+在Application中注册
+//监听网络
+NetworkUtils.getInstance(getApplicationContext()).registerNetworkListener(new NetworkUtils.NetworkListener() {
+       @Override
+       public void onNetwork(boolean connected) {
+          isConnected = connected;
+       }
+});
+
+
+
+解压内置出厂文件
+在Application中注册
+private void registerZipFile() {
+        ZipManager.init(this);
+        ZipManager.getInstance().registerCallBack(new ZipManager.MYICallBack() {
+            @Override
+            public void callBackStart() {
+                Logger.i("callBackStart");
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        //show("正在初始化出厂文件，请勿操作机器。");
+                    }
+                });
+            }
+
+            @Override
+            public void callBackStop() {
+                //dismiss();
+            }
+        });
+}
+
+
+
+日志文件
+在Application初始化
+/**
+* 初始化log
+*/
+private void initLog() {
+        //创建日志文件
+        File logFile = CreateFileUtisl.createFile("GR001LOG", "GR001");
+        if (logFile != null) {
+            Log.e("", "logFile :: " + logFile.getAbsolutePath());
+            //初始化log
+            Logger.init(this, logFile);
+        }
+}
+
+
+

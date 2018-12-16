@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+    <include layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_below="@+id/id_toolbar"
+        android:id="@+id/content"
+        android:layout_above="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/fileList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#70e3e3e3"
+            android:dividerHeight="0.1dip"></ListView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tfStatsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="TF卡已被卸载"/>
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="下一步"/>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="preference1"
+        android:title="所有电机"
+        android:disableDependentsState="true"/>
+<!--    <SwitchPreference
+        android:key="preference2"
+        android:title="头部电机"
+        android:dependency="preference1"/>
+    <SwitchPreference
+        android:key="preference3"
+        android:title="手臂电机"
+        android:dependency="preference1"/>
+    <SwitchPreference
+        android:key="preference4"
+        android:title="脚部电机"
+        android:dependency="preference1"/>-->
+</PreferenceScreen>

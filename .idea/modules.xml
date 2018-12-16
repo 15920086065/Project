@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestApp.iml" filepath="$PROJECT_DIR$/TestApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crlibrarya/crlibrarya.iml" filepath="$PROJECT_DIR$/crlibrarya/crlibrarya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robotlibrary/robotlibrary.iml" filepath="$PROJECT_DIR$/robotlibrary/robotlibrary.iml" />
+    </modules>
+  </component>
+</project>

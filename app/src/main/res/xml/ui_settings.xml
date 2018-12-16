@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="preference1"
+        android:title="@string/ui_settings1" />
+    <Preference
+        android:key="preference2"
+        android:title="@string/ui_settings2" />
+    <Preference
+        android:key="preference3"
+        android:title="@string/ui_settings3" />
+    <Preference
+        android:key="preference4"
+        android:title="@string/ui_settings4" />
+    <Preference
+        android:key="preference5"
+        android:title="@string/ui_settings5" />
+    <Preference
+        android:key="preference6"
+        android:title="@string/ui_settings6" />
+    <Preference
+        android:key="preference7"
+        android:title="@string/ui_settings7" />
+    <Preference
+        android:key="preference8"
+        android:title="@string/ui_settings8" />
+    <Preference
+        android:key="preference9"
+        android:title="@string/ui_settings9" />
+    <!--<Preference
+        android:key="preference10"
+        android:title="@string/ui_settings10" />-->
+    <Preference
+        android:key="preference11"
+        android:title="@string/ui_settings11" />
+    <Preference
+        android:key="preference12"
+        android:title="@string/ui_settings12" />
+    <Preference
+        android:key="preference13"
+        android:title="@string/ui_settings13" />
+<!--    <Preference
+        android:key="preference14"
+        android:title="@string/ui_settings14" />-->
+    <Preference
+        android:key="preference15"
+        android:title="@string/ui_settings15" />
+    <Preference
+        android:key="preference16"
+        android:title="@string/ui_settings16" />
+    <Preference
+        android:key="preference17"
+        android:title="@string/ui_settings17" />
+    <Preference
+        android:key="preference18"
+        android:title="@string/ui_settings18" />
+</PreferenceScreen>
